@@ -9,11 +9,24 @@
     </head>
 
     <body>
+
+        <audio id="AudioHAT">
+            <source src="./audio/hat.mp3" type="audio/mpeg">
+            HAT lost!
+        </audio>
+        <audio id="AudioTOM">
+            <source src="./audio/tom.mp3" type="audio/mpeg">
+            TOM lost!
+        </audio>
+
         <header>
             <div class="header">
-                <h2 class="topBox">chess openings</h2>
-                <img src="images/coverimg.png" alt="Openings" class="coverRespImg">
-                <p class="flavourText">chess openings are a series of pre-planned moves meant to put the player in a comfortable position without the need to calculate much.</p>
+                <div class="threeBoxContainer">
+                    <h2 class="topBox">chess openings</h2>
+                    <img src="images/siteQR.png" alt="Site QR Code" class="coverRespImg" id="qr">
+                </div>
+                <img src="images/coverimg.jpg" alt="Openings" class="coverRespImg">
+                <p class="flavourText">Chess openings are a series of pre-planned moves meant to put the player in a comfortable position without the need to calculate much.</p>
                 <br>
             </div>
         </header>
@@ -22,19 +35,19 @@
             <h1 id="navHeader">CHESS OPENINGS</h1>
             <br>
             <div class="buttonContainer">
-                <button id="pageWhite" class="navLink">Openings for White</button>
-                <button id="pageBlack" class="navLink">Openings for Black</button>
-                <button id="speedQuiz" class="navLink">Openings Speedquiz</button>
+                <button id="pageWhite" class="navLink buttonAnim">Openings for White</button>
+                <button id="pageBlack" class="navLink buttonAnim">Openings for Black</button>
+                <button id="speedQuiz" class="navLink buttonAnim">Openings Speedquiz</button>
             </div>
         </nav>
 
-        <content id="contentContainer">
+        <content>
             <section class="content" id="c1">
                 <p class="contentHeader">White has 20 legal moves at the start of the game, most of which aren't that good. The number varies depending on who you ask, but many would consider five starting moves as the best.</p>
-                <img src="images/goodWhiteMoves.png" alt="Good initial moves" class="coverRespImg">
+                <img src="images/goodWhiteMoves.jpg" alt="Good initial moves (white)" class="coverRespImg">
                 <div class="contentSContainer">
                     <p class="contentSTitle">1.e4</p>
-                    <img src="images/e4.png" alt="1.e4" class="contentSideImg">
+                    <img src="images/e4.jpg" alt="1.e4" class="contentSideImg">
                     <p class="contentSText">
                         The most popular first move in the game, pawn to e4.
                         This move is played in more than 50% of games,
@@ -45,7 +58,7 @@
                 </div>
                 <div class="contentSContainer">
                     <p class="contentSTitle">1.d4</p>
-                    <img src="images/d4.png" alt="1.d4" class="contentSideImg">
+                    <img src="images/d4.jpg" alt="1.d4" class="contentSideImg">
                     <p class="contentSText">
                         A close runner-up in popularity, pawn to d4 is the next most popular first move,
                         played in about a quarter of all games.
@@ -54,33 +67,163 @@
                         Games where this is played tend to be more positional and strategic.
                     </p>
                 </div>
-                
+                <div class="contentSContainer">
+                    <p class="contentSTitle">1.Nf3</p>
+                    <img src="images/Nf3.jpg" alt="1.Nf3" class="contentSideImg">
+                    <p class="contentSText">
+                        The next most popular first move, if you can even call it popular, is Nf3, often called the Reti or the Zukertort.
+                        Despite being the 3rd most popular option, it's only played in around 5% of chess games, despite how "good" many claim it is.
+                        1.Nf3 controls the centre from a distance before committing any pawns forward, to later respond with whatever black does in the centre.
+                        Games where this played could go anywhere, depending on what both players want to do. It's a very flexible opening with many valid continuations.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <p class="contentSTitle">1.c4</p>
+                    <img src="images/c4.jpg" alt="1.c4" class="contentSideImg">
+                    <p class="contentSText">
+                        The English begins with pawn to c4.
+                        This opening carries similar strategic ideas found in 1.d4 combined with similar flexible nature in 1.Nf3.
+                        What's different, however, is black's pool of responses drop greatly; only three responses by black would
+                        realistically be played, making this a great opening for shrinking black's control over the game.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <p class="contentSTitle">1.g3</p>
+                    <img src="images/g3.jpg" alt="1.g3" class="contentSideImg">
+                    <p class="contentSText">
+                        Called either the King's Fianchetto or the Hungarian, 1.g3 is a very passive first move, played with
+                        the prospect of positioning the bishop on g2.
+                        Despite gathered data supposing this opening is only played a staggering 2% of the time, finding
+                        people that play this in both real life and online games is deceivingly easy, especially in low-rated games.
+                        In essence, this is very similar to 1.Nf3. It contests the centre from a distance, and the game could skew any way depending on what both players want.
+                    </p>
+                </div>
                 <br>
             </section>
             <section class="content" id="c2">
-                BLACK
+                <p class="contentHeader">Since white has many different responses, what works best is situational. This will cover white's most likely first moves.</p>
+                <img src="images/goodBlackMoves.jpg" alt="Good initial moves (black)" class="coverRespImg">
+                <div class="contentSContainer">
+                    <p class="contentSTitle">Against 1.e4</p>
+                    <img src="images/e4.jpg" alt="1.e4" class="contentSideImg">
+                    <br>
+                    <img src="images/e4e5.jpg" alt="1...e5" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        The most popular response, 1.e4 e5 is the most popular first two moves in chess.
+                        Black responds to white's attempt to take the centre by bringing its own pieces into the centre as well.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <br>
+                    <img src="images/e4c5.jpg" alt="1...c5" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        Played around 20% of the time, the Sicilian Defence starts with 1...c5.
+                        This opening aims to unbalance the position with asymmetry, leading to pressure on the queenside.
+                        Black's game plan usually involves attacking white's queenside while consolidating their own kingside.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <br>
+                    <img src="images/e4c6.jpg" alt="1...c6" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        The Caro Kann, an opening growing more popular in recent years, involves 1...c6.
+                        Black prepares to play pawn to d5 later, giving much needed support to an otherwise fragile central attacker.
+                        Black mainly focuses on making useful pawn formations at the start, then developing their knights and bishops.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <br>
+                    <img src="images/e4e6.jpg" alt="1...e6" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        The last common mainstream response to 1.e4 is the French.
+                        Similar to the Caro Kann, a pawn is pushed to later consolidate d5, but with the pushed pawn now closer
+                        to the centre, most of the board usually gets locked down by the end of the opening, leading to a comparatively slower game.
+                    </p>
+                </div>
+                <br>
+                <div class="contentSContainer">
+                    <p class="contentSTitle">Against 1.d4</p>
+                    <img src="images/d4.jpg" alt="1.d4" class="contentSideImg">
+                    <br>
+                    <img src="images/d4d5.jpg" alt="1...d5" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        1.d4 narrows what can be done initially. Only two popular options exist after 1.d4, the more common of which being 1...d5.
+                        This move is played nearly 50% of the time and, similar to 1.e4 e5, is black's way to contest white's desire to immediately take the centre.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <br>
+                    <img src="images/d4Nf6.jpg" alt="1...Nf6" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        1...Nf6 is the Indian Game, and is a hypermodern approach to 1.d4.
+                        Black doesn't commit a pawn just yet, rather they wait to see what white is doing to decide whether
+                        to immediately fight for the centre directly or from afar with pieces. Overall, this is one of the most flexible responses for black.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <p class="contentSTitle">Against 1.Nf3</p>
+                    <img src="images/Nf3.jpg" alt="1.Nf3" class="contentSideImg">
+                    <br>
+                    <img src="images/Nf3d5.jpg" alt="1...d5" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        Similar to 1.d4, what can be done is limited a lot. Being played roughly once every three times,
+                        1...d5 instantly challenges white's prospects of stealing the centre later by fortifying the centre early.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <br>
+                    <img src="images/Nf3Nf6.jpg" alt="1...Nf6" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        The next most common response is Nf6.
+                        Not much can be said for this move, black essentially copies white's hypermodern
+                        ideas and maintains symmetry in the game.
+                    </p>
+                </div>
+                <div class="contentSContainer">
+                    <p class="contentSTitle">Against 1.g3</p>
+                    <img src="images/g3.jpg" alt="1.g3" class="contentSideImg">
+                </div>
+                <div class="contentSContainer">
+                    <br>
+                    <img src="images/d5ore5.jpg" alt="1...d5 or 1...e5" class="contentSideImg">
+                    <p class="contentSText blackSideAlign">
+                        1.g3, on the other hand, is harder to assign a guide as such an opening takes the game out of
+                        theory very quickly. Out of the 12 most-played responses, only 5 were given an official and widely recognised name.
+                        Black can play either e5 or d5 to contest the centre, and immediately steal territory while white is still preparing.
+                    </p>
+                </div>
+
             </section>
             <section class="content" id="c3">
-                QUIZ
+                <h1 id="navHeader">SPEEDQUIZ</h1>
+                <p class="flavourText">Select whether the opening's name is correct or not as fast as possible. Get 5 correct to finish!</p>
+                <img src="images/quizStandby.jpg" alt="Quiz Image" class="coverRespImg" id="quizImg">
+                <p class="minorCentre" id="quizName">Uh oh! Something broke!</p>
+                <div class="threeBoxContainer">
+                    <button id="quizCorrect" class="navLink">Correct</button>
+                    <button id="quizWrong" class="navLink">Wrong</button>
+                </div>
+                <p class="flavourText" id="quizTimer">00</p>
+                <p class="flavourText" id="correctTally">0/5</p>
             </section>
         </content>
      
         <textboxes>
             <div class="threeBoxContainer"><!--three infoboxes-->
                 <div class="threeBoxes">
-                    <h3 class="minorCentre">why openings?</h3>
+                    <h3 class="minorCentre">Why openings?</h3>
                     <br><br><br>
                     <p class="wrappedText">Openings benefit you in many ways. It establishes a strong foundation for the rest of the game, counters common early traps or blunders, and teaches good chess principles.</p>
                 </div>
                 <div class="threeBoxes">
-                    <h3 class="minorCentre">what do openings accomplish?</h3>
+                    <h3 class="minorCentre">What do openings accomplish?</h3>
                     <br><br><br>
                     <p class="wrappedText">It depends on the exact opening, but the general idea is usually the same: control the centre, develop pieces, and get the king to a safe place.</p>
                     <br>
                     <p class="wrappedText">The specific goals stressed over others differ greatly from opening to opening. Openings in essence are preparations to streamline the middlegame. </p>
                 </div>
                 <div class="threeBoxes">
-                    <h3 class="minorCentre">how many openings are there?</h3>
+                    <h3 class="minorCentre">How many openings are there?</h3>
                     <br><br><br>
                     <p class="wrappedText">Given the definition of "a specific sequence of moves played at the start of a game", there would be billions.</p>
                     <br>
@@ -88,24 +231,6 @@
                 </div>
             </div>
         </textboxes>
-        <h3 class="minorCentre">why openings?</h3>
-        <section>
-            <div class="container">
-                <img src="./images/pfbanner.jpg" alt="Image" class="imgleft">
-                <p class="infoboxright">text</p>
-            </div>
-        </section>
-        <nav class="tealborder">
-            <h1>text</h1>
-            <br>
-            <div class="container">
-                <ul>
-                    <a href = "education.html" class="navlink">text</a>
-                    <a href = "hobbies.html" class="navlink">text</a>
-                    <a href = "aboutme.html" class="navlink">text</a>
-                    <br>
-                </ul>
-            </div>
-        </nav>
+        <h3 class="minorCentre">Chess openings</h3>
     </body>
 </html>
