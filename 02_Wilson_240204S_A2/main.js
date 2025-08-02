@@ -85,7 +85,7 @@ function randomise()
     }
     else
     {
-        quizImage.src = "Images/quizStandby.jpg";
+        quizImage.src = "images/quizStandby.jpg";
     }
 }
 
