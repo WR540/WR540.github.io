@@ -1,0 +1,360 @@
+
+*
+{
+    background-color:black;
+    text-align:center;
+}
+
+h1
+{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-family: helvetica;
+    outline: 2px solid rgb(35, 166, 210);
+}
+
+.header
+{
+    font-size: 200%;
+}
+
+.minorCentre
+{
+    flex: 100%;
+    color:rgb(255, 255, 255);
+    max-height: 20px;
+    width: 75%;
+    font-size: 225%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    font-family: monospace;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2
+{
+    color:rgb(255, 255, 255);
+    width: 30%;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    font-family: monospace;
+    padding: 5%;
+}
+
+p
+{
+    color:rgb(200, 200, 200);
+    font-family: monospace;
+}
+
+.buttonContainer
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imgleft
+{
+    flex: 2;
+    background-color:black;
+    width: 40%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.infoboxright
+{
+    flex: 3;
+    background-color:rgb(47, 47, 47);
+    width: 60%;
+    margin-right: 25%;
+    text-align: center;
+    display: inline-block
+}
+
+.imgbanner
+{
+    width: 30%;
+
+    outline: 2px whitesmoke;
+    outline-style:ridge;
+}
+
+.navLink
+{
+    flex: 1;
+    color:rgb(255, 255, 255);
+    background-color: rgb(47, 47, 47);
+    font-family: monospace;
+    padding: 10px;
+    min-width: 25%;
+    font-size: 250%;
+    margin: 2%;
+}
+
+.tealBorder
+{
+    border: 2px solid rgb(35, 166, 210);
+    padding: 2%;
+    margin: 5%;
+}
+
+.coverRespImg
+{
+    max-width: 50%;
+    background: gray;
+    
+}
+
+.flavourText
+{
+    color: darkgrey;
+    font-size: 150%;
+}
+
+.threeBoxContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+}
+
+.threeBoxes
+{
+    max-width: 25%;
+    display: inline-block;
+    flex: 1;
+    outline: 1px solid rgb(255, 255, 255);
+}
+
+.topBox
+{
+    flex: 1 1 100%;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    background-color: black;
+    font-family: monospace;
+    outline: 2px solid white;
+    padding: 0.5;
+    color:rgb(255, 255, 255);
+    width: 50%;
+}
+
+
+body
+{
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2;
+    margin-top: 20px;
+}
+
+.wrappedText
+{
+    font-size: 175%;
+}
+
+#navHeader
+{
+    font-size: 500%;
+    min-height: 50px;
+    text-align: center;
+}
+
+.content
+{
+    max-width: 80%;
+    min-height: 80%;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+nav div
+{
+    display:inline;
+}
+
+.contentHeader
+{
+    color: darkgrey;
+    font-size: 1.25vw;
+}
+
+#contentContainer
+{
+   
+}
+
+.contentSText
+{
+    flex: 2;
+    color: lightgrey;
+    font-size: 1.5vw;
+    padding: 5%;
+}
+
+.contentSideImg
+{
+    flex: 1;
+    max-width: 20%;
+    padding: 5%;
+}
+
+.contentSideText
+{
+    flex: 2;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    background-color: black;
+    font-family: monospace;
+    outline: 2px solid white;
+    padding: 0.5;
+    color:rgb(255, 255, 255);
+    width: 50%;
+}
+
+.contentSContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+}
+
+.contentSTitle
+{
+    flex: 100%;
+    color: lightgrey;
+    font-size: 4vw;
+    padding: 2%;
+}
+
+/*responsive implemention, originally had it for changes from 600-200px to accommodate for many dimensions, but abridged for criterion*/
+
+@media (max-width:800px)
+{
+    .threeBoxContainer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+    .threeBoxes
+    {
+        max-width: 70%;
+        display: inline-block;
+        flex: 1;
+        outline: 1px solid rgb(255, 255, 255);
+    }
+    .wrappedText
+    {
+        display: inline-block;
+        flex: 1;
+        font-size: 100%;
+    }
+    .coverRespImg
+    {
+        max-width: 25%;
+        display: inline-block;
+    }
+
+    .topBox
+    {
+        color:rgb(255, 255, 255);
+        height: 25%;
+        text-align: center;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        font-family: monospace;
+        outline: 2px solid rgb(255, 255, 255);
+        flex: 1 1 50%;
+        font-size: 1rem;
+        padding: 0.5;
+        margin-right: 5%;
+    }
+    
+    .header
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        align-content: center;
+        margin: 10%;
+    }
+
+    .flavourText
+    {
+        color: darkgrey;
+        font-size: 100%;
+    }
+
+    #navHeader
+    {
+        font-size: 200%;
+        min-height: 25px;
+        text-align: center;
+    }   
+
+    .buttonContainer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .navLink
+    {
+        min-width: 100%;
+    }
+
+    .contentSTitle
+    {
+        flex: 1;
+        color: lightgrey;
+        font-size: 4vw;
+        padding: 2%;
+    }
+
+    .contentSideImg
+    {
+        flex: 3;
+        max-width: 20%;
+        padding: 5%;
+    }
+
+    .contentSText
+    {
+        flex: 100%;
+        color: lightgrey;
+        font-size: 1.5vw;
+        padding: 5%;
+    }
+}
+
